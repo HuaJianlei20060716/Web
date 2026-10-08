@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>图书检索 - 校园图书屋</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>校园图书屋</h1>
+      <p class="subtitle">图书检索</p>
+    </div>
+  </header>
+
+  <nav class="site-nav">
+    <div class="container">
+      <a href="index.html">首页</a>
+      <a href="search.html" class="active">检索</a>
+      <a href="index.html#about">关于</a>
+    </div>
+  </nav>
+
+  <main class="container search-page">
+    <section class="search-panel">
+      <h2>图书检索</h2>
+      <form action="#" method="get">
+        <p>
+          <label for="kw">书名关键字</label>
+          <input type="text" id="kw" name="keyword" placeholder="例如：HTML、Python" required maxlength="30">
+        </p>
+
+        <p>
+          <label for="type">图书分类</label>
+          <select id="type" name="type">
+            <option value="all">全部</option>
+            <option value="computer">计算机</option>
+            <option value="literature">文学</option>
+          </select>
+        </p>
+
+        <p>
+          <label>排序方式</label>
+          <input type="radio" id="newest" name="sort" value="newest" checked>
+          <label for="newest" class="inline-label">新品</label>
+          <input type="radio" id="price" name="sort" value="price">
+          <label for="price" class="inline-label">价格</label>
+        </p>
+
+        <p>
+          <label>筛选条件</label>
+          <input type="checkbox" id="instock" name="instock" value="yes">
+          <label for="instock" class="inline-label">仅显示可借阅</label>
+        </p>
+
+        <button type="submit">开始检索</button>
+      </form>
+
+      <div class="tip">
+        提示：关键字为空时点击“开始检索”，浏览器会自动进行 required 必填验证。
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>版权所有 © 2026 校园图书屋</p>
+    </div>
+  </footer>
+</body>
+</html>

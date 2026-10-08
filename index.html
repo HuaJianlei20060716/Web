@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>校园图书屋</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>校园图书屋</h1>
+      <p class="subtitle">发现一本好书，开启一段新的旅程</p>
+    </div>
+  </header>
+
+  <nav class="site-nav">
+    <div class="container">
+      <a href="index.html" class="active">首页</a>
+      <a href="search.html">检索</a>
+      <a href="#about">关于</a>
+    </div>
+  </nav>
+
+  <main class="container main-layout">
+    <section class="content-area">
+      <section class="search-box">
+        <h2>图书检索</h2>
+        <form action="#" method="get">
+          <label for="kw">书名关键字</label>
+          <input type="text" id="kw" name="keyword" placeholder="请输入书名关键字" required>
+
+          <label for="type">图书分类</label>
+          <select id="type" name="type">
+            <option value="all">全部</option>
+            <option value="computer">计算机</option>
+            <option value="literature">文学</option>
+            <option value="science">科普</option>
+          </select>
+
+          <button type="submit">检索</button>
+        </form>
+      </section>
+
+      <section class="book-section">
+        <h2>新书推荐</h2>
+
+        <div class="book-list">
+          <article class="book-card">
+            <div class="book-cover">HTML5</div>
+            <h3>HTML5与CSS3基础</h3>
+            <p>作者：王明</p>
+            <p class="price">¥ 59.00</p>
+          </article>
+
+          <article class="book-card">
+            <div class="book-cover">Python</div>
+            <h3>Python程序设计</h3>
+            <p>作者：李华</p>
+            <p class="price">¥ 45.00</p>
+          </article>
+
+          <article class="book-card">
+            <div class="book-cover">Java</div>
+            <h3>Java Web开发</h3>
+            <p>作者：陈晨</p>
+            <p class="price">¥ 72.00</p>
+          </article>
+
+          <article class="book-card">
+            <div class="book-cover">DB</div>
+            <h3>数据库原理与应用</h3>
+            <p>作者：赵磊</p>
+            <p class="price">¥ 52.00</p>
+          </article>
+
+          <article class="book-card">
+            <div class="book-cover">算法</div>
+            <h3>算法设计基础</h3>
+            <p>作者：周宁</p>
+            <p class="price">¥ 68.00</p>
+          </article>
+
+          <article class="book-card">
+            <div class="book-cover">文学</div>
+            <h3>经典文学选读</h3>
+            <p>作者：刘欣</p>
+            <p class="price">¥ 39.00</p>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <aside class="sidebar">
+      <section class="side-box">
+        <h2>分类导航</h2>
+        <ul>
+          <li><a href="#">计算机</a></li>
+          <li><a href="#">文学</a></li>
+          <li><a href="#">科普</a></li>
+          <li><a href="#">历史</a></li>
+        </ul>
+      </section>
+
+      <section class="side-box">
+        <h2>本周热榜</h2>
+        <ol>
+          <li>HTML5与CSS3基础</li>
+          <li>Python程序设计</li>
+          <li>算法设计基础</li>
+        </ol>
+      </section>
+
+      <section class="side-box">
+        <h2>借阅须知</h2>
+        <p>每次最多借阅 5 本，借期 30 天，请按时归还图书。</p>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="site-footer" id="about">
+    <div class="container">
+      <p>版权所有 © 2026 校园图书屋</p>
+      <p>Web 应用程序设计 · HTML5 与 CSS 基础实验</p>
+    </div>
+  </footer>
+</body>
+</html>
